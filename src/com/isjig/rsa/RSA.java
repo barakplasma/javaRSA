@@ -3,19 +3,16 @@ package com.isjig.rsa;
 import java.math.BigInteger;
 import java.util.Random;
 
-public class RSA {
-    private RSA() {
-    }
+public class RSA 
+{
+    private RSA() {}
 
-    public static BigInteger encrypt(BigInteger m, BigInteger n, BigInteger e) {
-        return m.modPow(e, n);
-    }
+    public static BigInteger encrypt(BigInteger m, BigInteger n, BigInteger e) { return m.modPow(e, n); }
     
-    public static BigInteger decrypt(BigInteger c, BigInteger n, BigInteger d) {
-        return c.modPow(d, n);
-    }
+    public static BigInteger decrypt(BigInteger c, BigInteger n, BigInteger d) { return c.modPow(d, n); }
 
-    public static BigInteger[] generateKeys(int bitLength) {
+    public static BigInteger[] generateKeys(int bitLength) 
+    {
         BigInteger p, q, n, phiOfN, e, d;
         p = BigInteger.probablePrime(bitLength, new Random());
         q = BigInteger.probablePrime(bitLength, new Random());
