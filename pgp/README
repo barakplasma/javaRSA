@@ -1,0 +1,27 @@
+ Author:  Eric Chiang
+Contact:  eric@isjig.com
+
+To do (Feb. 12, 2013)
+- RSA Encryption
+    * Clean up bit length of e, currently just set at 8 bits
+    * Add exceptions for bad key lengths for general key generation, maybe just
+         allow arguments to specify different levels (eg: 1 = 512, 2 = 1024)
+    * Should abstract key class be in this package, or in some higher folder?
+         Other classes have keys, should they all extend the same class?
+
+- OTP (One time pad)
+    * Is this the best common encryption scheme for pgp?
+    * Must implement
+
+- PGP (Pretty good privacy)
+    * Must pull together OTP and RSA
+    * Has to generate random, one time use key
+
+- General
+    * How to interact between two computers (possibly front end), and how to
+        get a recipients public key
+    * What functions should be available to users?
+    * Add documentation for all methods and classes <-- IMPORTANT
+    * How will keys and messages be exchanged? (Front end)
+    * Work out git commit structure
+
