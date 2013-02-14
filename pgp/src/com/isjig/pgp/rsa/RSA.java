@@ -1,4 +1,4 @@
-package com.isjig.rsa;
+package com.isjig.pgp.rsa;
 
 import java.math.BigInteger;
 import java.util.Random;
@@ -40,7 +40,7 @@ public class RSA
     public static void main(String[] args){
         
        System.out.println("Generating keys...");
-       Key[] pubPri = generateKeys(4096);
+       Key[] pubPri = generateKeys(1024);
        System.out.println("Encrypting message...");
        BigInteger plainText = new BigInteger("123456789");
        BigInteger cipherText = encrypt((PublicKey)pubPri[0],plainText);

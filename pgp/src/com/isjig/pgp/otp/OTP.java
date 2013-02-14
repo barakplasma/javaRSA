@@ -1,4 +1,4 @@
-package com.isjig.otp;
+package com.isjig.pgp.otp;
 
 public class OTP {
     

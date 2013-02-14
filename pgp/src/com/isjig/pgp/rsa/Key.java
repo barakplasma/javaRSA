@@ -1,4 +1,4 @@
-package com.isjig.rsa;
+package com.isjig.pgp.rsa;
 
 public abstract class Key {
     
